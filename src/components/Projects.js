@@ -11,7 +11,7 @@ const Projects = ()=>{
                         <Card.Body>
                             <Card.Title>Weather App</Card.Title>
                             <Card.Text>
-                                Simple weather app made with Express.js, using Mapbox's and Geolocation's API.
+                                Simple weather app made with Express.js, using Mapbox's and Weatherstack's API.
                             </Card.Text>
                             <div className='botones'>
                                 <Nav>
