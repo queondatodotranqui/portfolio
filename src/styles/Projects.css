@@ -1,0 +1,20 @@
+
+.projects{
+    width: 80vw;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+@media all and (min-width: 300px) and (max-width:450px){
+    .projects{
+        margin-top: 110vh;
+        padding: 20px;
+    }
+}
+
+@media all and (min-width:450px) and (max-width:800px){
+    .projects{
+        margin-top: 40vh;
+    }
+}

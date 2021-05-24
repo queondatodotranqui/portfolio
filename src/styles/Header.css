@@ -1,0 +1,11 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}

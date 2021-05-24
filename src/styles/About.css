@@ -1,0 +1,111 @@
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.info{
+    width: 100%;
+    height: 70vh;
+    margin-left: 0;
+}
+
+.tech{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tech h2{
+    height: 12vh;
+    padding: 20px 0px 20px 50px;
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutMe h2{
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+
+.self{
+    height: 40vh;
+    font-size: 1.6em;
+}
+
+.photo{
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    min-width: 400px;
+}
+
+.placeholder{
+    background-color: lightcoral;
+    height: 100%;
+    width: 100%;
+}
+
+.logos{
+    height: 28vh;
+    padding: 20px 50px;
+    margin-left: 0;
+}
+
+.logos .col{
+    align-content: center;
+    height: 100%;
+}
+
+.img-fluid{
+    max-height: 100px;
+}
+
+@media all and (min-width: 300px) and (max-width: 450px){
+
+    .info{
+        height: 100vh;
+    }
+
+    .self{
+        height: auto;
+    }
+
+    .aboutMe{
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .photo{
+        display: none;
+    }
+
+    .tech h2{
+        height: 12vh;
+        padding: 20px;
+    }
+
+    .logos{
+        height: 40vh;
+        padding-top: 0;
+    }
+
+    .logos .col-12{
+        margin-top: 5vh;
+    }
+}
+
+@media all and (min-width:450px) and (max-width:800px){
+    .tech{
+        margin-top: 50vh;
+    }
+}
