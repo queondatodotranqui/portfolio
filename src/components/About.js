@@ -6,7 +6,7 @@ const About = () =>{
         <div className="about" id='about'>
             <Row className="info">
                 <Col xs={0} md={6} className='photo'>
-                    <div className='placeholder'></div>
+                    <Image src='/img/myself.jpg' rounded></Image>
                 </Col>
                 <Col xs={12} md={6} className='aboutMe'>
                     <h2 className='p-3'>About me</h2>
@@ -16,7 +16,7 @@ const About = () =>{
                 </Col>
             </Row>
             <div className="tech">
-                <h2>My Technologies</h2>
+                <h2>My Skills</h2>
                 <Row className='logos'>
                     <Col xs={12} sm={2}>
                         <Image src='/img/HTML5.png' fluid></Image>
