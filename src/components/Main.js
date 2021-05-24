@@ -4,10 +4,9 @@ import TextTransition, {presets} from 'react-text-transition';
 import '../styles/Main.css';
 
 const TEXTS = [
-    'Hello!',
     'Hi!',
-    'Hola!',
-    'Hey!'
+    'Hey!',
+    'Hello!'
 ];
 
 const Main = ()=>{

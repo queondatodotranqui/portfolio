@@ -1,12 +1,13 @@
 import { Col, Image, Row, Nav} from 'react-bootstrap';
 import '../styles/Contact.css';
+import Footer from './Footer';
 
 const Contact = ()=>{
     return(
         <div className='contact-bg'>
             <div className='contact' id='contact'>
                 <h2>Let's talk!</h2>
-                <h4>You can find me on my social networks o via <a href='https://wa.link/7gy8mz'>WhatsApp</a></h4>
+                <h4>You can find me on my social networks o via <a href='https://wa.me/5492235578480?text=Hello! I am Nicolas Vera. Nice to meet you'>WhatsApp</a></h4>
                 <Row className='redes'>
                     <Nav>
                         <Col>
@@ -28,6 +29,7 @@ const Contact = ()=>{
                     </Nav>
                 </Row>
             </div>
+            <Footer />
         </div>
     )
 }
