@@ -13,10 +13,12 @@
 @media all and (min-width: 300px) and (max-width: 450px){
 
     .footer{
-        margin-top: 12vh;
+        margin-top: 10vh;
     }
 }
 
-/* @media all and (min-width:450px) and (max-width:800px){
-    
-} */
+@media all and (min-width:450px) and (max-width:600px){
+    .footer{
+        margin-top: 10vh;
+    }    
+}

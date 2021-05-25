@@ -50,7 +50,7 @@
     }
 }
 
-@media all and (min-width:450px) and (max-width:800px){
+@media all and (min-width:450px) and (max-width:600px){
     .contact{
         height: 30vh;
     }
@@ -58,4 +58,9 @@
     .contact-bg{
         height: 50vh;
     }
+}
+
+@media all and (min-width:600px) and (max-width:999px){
+
+    
 }

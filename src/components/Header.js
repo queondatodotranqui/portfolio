@@ -5,7 +5,7 @@ const Header = () =>{
     return(
         <Navbar expand="lg" className="p-3" style={{justifyContent:'flex-end'}} >
             <Navbar.Toggle 
-                children={<Image src='/img/list.svg'/>} aria-controls="basic-navbar-nav"
+                children={<Image src={process.env.PUBLIC_URL + '/img/list.svg'}/>} aria-controls="basic-navbar-nav"
             />
             <Navbar.Collapse id="basic-navbar-nav" style={{justifyContent:'flex-end'}}>
                 <Nav.Link href="#about">About</Nav.Link>

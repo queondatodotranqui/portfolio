@@ -6,11 +6,11 @@ const About = () =>{
         <div className="about" id='about'>
             <Row className="info">
                 <Col xs={0} md={6} className='photo'>
-                    <Image src='/img/myself.jpg' rounded></Image>
+                    <Image src={process.env.PUBLIC_URL +'/img/myself.jpg'} rounded></Image>
                 </Col>
                 <Col xs={12} md={6} className='aboutMe'>
-                    <h2 className='p-3'>About me</h2>
-                    <p className='self p-3'>
+                    <h2 className='p-3 median'>About me</h2>
+                    <p className='self p-3 median'>
                         I'm a Node.js Back-end Developer based in Mar del Plata, Argentina.<br /> I started learning Front-end and along the way became fascinated by Javascript and Node.js.
                     </p>
                 </Col>
@@ -19,19 +19,19 @@ const About = () =>{
                 <h2>My Skills</h2>
                 <Row className='logos'>
                     <Col xs={12} sm={2}>
-                        <Image src='/img/HTML5.png' fluid></Image>
+                        <Image src={process.env.PUBLIC_URL +'/img/HTML5.png'} fluid></Image>
                     </Col>
                     <Col xs={12} sm={2}>
-                        <Image src='/img/javascript.png' fluid></Image>
+                        <Image src={process.env.PUBLIC_URL +'/img/javascript.png'} fluid></Image>
                     </Col>
                     <Col xs={12} sm={2}>
-                        <Image src='/img/nodejs.png' fluid></Image>
+                        <Image src={process.env.PUBLIC_URL +'/img/nodejs.png'} fluid></Image>
                     </Col>
                     <Col xs={12} sm={2}>
-                        <Image src='/img/react.png' fluid></Image>
+                        <Image src={process.env.PUBLIC_URL +'/img/react.png'} fluid></Image>
                     </Col>
                     <Col xs={12} sm={3}>
-                        <Image src='/img/mongo.png' fluid></Image>
+                        <Image src={process.env.PUBLIC_URL +'/img/mongo.png'} fluid></Image>
                     </Col>
                 </Row>
             </div>

@@ -7,15 +7,25 @@ import Contact from './components/Contact';
 import './styles/App.css';
 
 function App() {
+
+  const segundoCon = {
+    height: 'auto',
+    backgroundColor: 'white',
+    padding: '0'
+  }
+
   return (
     <div>
       <Container fluid className="contenedor">
         <Header></Header>
         <Main></Main>
       </Container>
-      <About />
-      <Projects />
-      <Contact />
+      <Container fluid className='contenedor' style={segundoCon}>
+        <About />
+        <Projects />
+        <Contact />
+      </Container>
+      
     </div>
   );
 }

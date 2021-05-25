@@ -82,7 +82,7 @@
     max-height: 100px;
 }
 
-@media all and (min-width: 300px) and (max-width: 450px){
+@media all and (min-width: 300px) and (max-width: 449px){
 
     .info{
         height: 100vh;
@@ -90,6 +90,10 @@
 
     .self{
         height: auto;
+    }
+
+    .about{
+        height: 200vh;
     }
 
     .aboutMe{
@@ -102,6 +106,7 @@
     }
 
     .tech{
+        height: 100vh;
         margin-top: 0;
     }
 
@@ -111,7 +116,7 @@
     }
 
     .logos{
-        height: 40vh;
+        height: 88vh;
         padding-top: 0;
     }
 
@@ -120,8 +125,70 @@
     }
 }
 
-@media all and (min-width:450px) and (max-width:800px){
+@media all and (min-width:450px) and (max-width:599px){
+
+    .info{
+        height: 100vh;
+    }
+
+    .rounded{
+        margin-bottom: 0;
+    }
+
+    .about{
+        height: 200vh;
+    }
+
     .tech{
-        margin-top: 75vh;
+        height: 100vh;
+        margin-top: 10vh;
+    }
+
+    .photo{
+        height: 50vh;
+    }
+
+    .aboutMe{
+        height: 50vh;
+    }
+
+    .aboutMe h2{
+        margin-top: -3vh;
+    }
+
+    .logos{
+        height: 88vh;
+    }
+}
+
+@media all and (min-width:600px) and (max-width:999px){
+
+    .info{
+        height: 100vh;
+    }
+
+    .rounded{
+        margin-bottom: 0;
+    }
+
+    .photo{
+        height: 55vh;
+        padding: 0;
+    }
+
+    .about{
+        height: 135vh;
+    }
+
+    .aboutMe{
+        height: 45vh;
+    }
+
+    .tech{
+        margin-top: 0;
+    }
+
+    .logos{
+        padding: 0;
     }
 }

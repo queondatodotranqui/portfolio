@@ -1,12 +1,18 @@
-import { Col , Row , Card , Button , Nav} from 'react-bootstrap';
+import { Col , Row , Card , Button , Nav , OverlayTrigger, Tooltip} from 'react-bootstrap';
 import '../styles/Projects.css';
+
+const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      Not finished yet!
+    </Tooltip>
+  );
 
 const Projects = ()=>{
     return(
         <div className='projects' id='projects'>
             <h2>Projects</h2>
             <Row className='projecol'>
-                <Col xs={12} sm={6}>
+                <Col xs={12} lg={6}>
                     <Card style={{ width: '100%', height: '100%' }}>
                         <Card.Body>
                             <Card.Title>Weather App</Card.Title>
@@ -26,7 +32,7 @@ const Projects = ()=>{
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xs={12} sm={6}>
+                <Col xs={12} lg={6}>
                     <Card style={{ width: '100%', height: '100%' }}>
                         <Card.Body>
                             <Card.Title>Task App</Card.Title>
@@ -38,8 +44,14 @@ const Projects = ()=>{
                                     <Nav.Link href='https://github.com/queondatodotranqui/TaskApp'>
                                         <Button variant="outline-dark">Github</Button>
                                     </Nav.Link>
-                                    <Nav.Link href=''>
-                                        <Button variant="info">Website</Button>
+                                    <Nav.Link href='#'>
+                                        <OverlayTrigger
+                                            placement='right'
+                                            delay={{ show: 250, hide: 450}}
+                                            overlay={renderTooltip}
+                                        >
+                                            <Button variant="info">Website</Button>
+                                        </OverlayTrigger>
                                     </Nav.Link>
                                 </Nav>
                             </div>

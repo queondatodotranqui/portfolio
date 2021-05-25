@@ -40,7 +40,7 @@
 
 @media all and (min-width: 300px) and (max-width:450px){
     .projects{
-        margin-top: 110vh;
+        margin-top: 10vh;
         padding: 20px;
     }
 
@@ -51,12 +51,33 @@
 
 
 
-@media all and (min-width:450px) and (max-width:800px){
+@media all and (min-width:450px) and (max-width:600px){
     .projects{
-        margin-top: 70vh;
+        margin-top: 10vh;
+        height: 110vh;
+        padding: 0;
+    }
+
+    .projects h2{
+        height: 6vh;
+    }
+
+    .projecol{
+        height: 94vh;
     }
 
     .projecol .col-6, .projecol .col-12{
         padding: 30px 5px;
+    }
+
+    
+}
+
+
+@media all and (min-width:600px) and (max-width:999px){
+
+    .projects{
+        height: 90vh;
+        padding: 0;
     }
 }
