@@ -2,10 +2,23 @@
     scroll-behavior: smooth;
 }
 
-.nav-link{
-    color: black;
+.navbarExpanded{
+    background-color: rgba(0, 0, 0, 0.178);
 }
 
-.nav-link:hover{
-    border-bottom: 1px solid white;
+.nav-link{
+    color: black;
+    transition: 0.5s;
+}
+
+.onHover:hover{
+    background-color: black;
+    color: white;
+}
+
+@media all and (min-width:300px) and (max-width:1000px){
+    .navBar-link{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.658);
+    }
 }

@@ -11,18 +11,18 @@ const Contact = ()=>{
                 <Row className='redes'>
                     <Nav>
                         <Col>
-                            <Nav.Link href='https://www.linkedin.com/in/nicolas-vera-653b54196'>
+                            <Nav.Link className="onHoverLinks" href='https://www.linkedin.com/in/nicolas-vera-653b54196'>
                                 <Image src={process.env.PUBLIC_URL + '/img/linkedin.svg'}></Image>
                             </Nav.Link>
                             
                         </Col>
                         <Col>
-                            <Nav.Link href='https://www.instagram.com/_________________________vera/'>
+                            <Nav.Link className="onHoverLinks" href='https://www.instagram.com/_________________________vera/'>
                                 <Image src={process.env.PUBLIC_URL +'/img/instagram.svg'}></Image>
                             </Nav.Link>   
                         </Col>
                         <Col>
-                            <Nav.Link href='https://github.com/queondatodotranqui'>
+                            <Nav.Link className="onHoverLinks" href='https://github.com/queondatodotranqui'>
                                 <Image src={process.env.PUBLIC_URL +'/img/github.svg'}></Image>
                             </Nav.Link>    
                         </Col>

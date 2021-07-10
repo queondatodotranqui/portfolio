@@ -1,41 +1,39 @@
 import React from 'react';
-import TextTransition, {presets} from 'react-text-transition';
-
+import { init } from 'ityped'
 import '../styles/Main.css';
 
-const TEXTS = [
-    'Hi!',
-    'Hey!',
-    'Hello!'
-];
 
-const Main = ()=>{
+class Main extends React.Component{
 
-    const [index, setIndex] = React.useState(0);
+    constructor(){
+        super()
 
-    React.useEffect(()=>{
-        const intervalId = setInterval(() => {
-          setIndex(index => index + 1)  
-        }, 3000);
+        this.state = {
+            texts: ['Node.js developer', 'React enjoyer', 'Code enthusiast']
+        }
+    }
 
-        return () => clearTimeout(intervalId);
-    }, []);
+    componentDidMount(){
+        const target = document.getElementById('target')
+        init(target, {
+            strings: this.state.texts,
+            typeSpeed: 120,
+            backSpeed:70,
+            showCursor:false,
+            backDelay: 1200
+        })
+    }
 
-    return(
-        <div className="intro">
-            <div style={{width:'50%'}}>
-                <h1><TextTransition 
-                    text={ TEXTS[index % TEXTS.length]}
-                    springConfig={ presets.gentle}
-                    className='movingText'
-                /></h1>
+    render(){
+        return(
+            <div className="intro">
+                <div>
+                    <h2 className="target" style={{top:295, fontSize:'2em'}}>Hello! I'm Nicolas Vera</h2>
+                    <p id="target" style={{fontWeight:'lighter'}} className="target"></p>
+                </div>
             </div>
-            <div>
-                <h3>I'm Nicolas Vera</h3>
-                <h5>A Node.js Developer</h5>
-            </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default Main;

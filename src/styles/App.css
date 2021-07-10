@@ -6,7 +6,7 @@
 }
 
 .contenedor{
-    background-color: lightblue;
+    background-color: #ebebeb;
     height: 100vh;
     display: flex;
     flex-direction: column;

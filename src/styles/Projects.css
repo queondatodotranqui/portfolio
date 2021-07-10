@@ -2,13 +2,13 @@
 
 .projects{
     width: 80vw;
-    height: 60vh;
+    height: 100vh;
     margin: 0 auto;
     padding: 50px;
 }
 
 .projecol{
-    height: 40vh;
+    height: 80vh;
     margin: 0;
 }
 
@@ -42,6 +42,7 @@
     .projects{
         margin-top: 10vh;
         padding: 20px;
+        height: 200vh;
     }
 
     .projecol .col-6, .projecol .col-12{

@@ -13,11 +13,18 @@
     text-align: center;
 }
 
-.movingText{
-    width: 50vw;
-    left: 31vw;
-    font-size: 1.5em;
+.target{
+    position:absolute;
+    display: block;
+    font-size: 1.7em;
+    margin-left:auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    text-align: center;
+    top:350px;
 }
+
 
 @media all and (min-width: 300px) and (max-width: 400px){
 

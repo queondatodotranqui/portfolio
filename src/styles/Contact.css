@@ -43,10 +43,27 @@
     flex-wrap: nowrap;
 }
 
-@media all and (min-width:300px) and (max-width: 450px){
+.onHoverLinks:hover{
+    filter: invert(1);
+    background-color: white;
+    border-radius: 15%;
+}
+
+@media all and (min-width:300px) and (max-width: 400px){
     .contact-bg{
         height: 60vh;
-        margin-top: 40vh;
+    }
+}
+
+@media all and (min-width:401px) and (max-width: 449px){
+    .contact-bg{
+        margin-top: -30vh;
+    }
+}
+
+@media all and (min-height:750px) and (max-height:999px){
+    .contact-bg{
+        margin-top: -35vh;
     }
 }
 
